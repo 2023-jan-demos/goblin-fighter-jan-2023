@@ -11,7 +11,7 @@ const defeatedCountEl = document.getElementById('defeated-count');
 
 /* State */
 let defeatedCount = 0;
-let playerHP = 2;
+let playerHP = 10;
 const goblins = [
     {
         name: 'Terry',
