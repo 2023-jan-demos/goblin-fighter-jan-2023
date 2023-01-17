@@ -25,15 +25,31 @@
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
+    <header id="defeated-count">
+        You have defeated 0 goblins
     </header>
-
     <main>
-
+        <div class="fighter-container">
+            <h2>
+                Your HP: <span id="player-hp">10</span>
+            </h2>
+            <div>
+                <img src="./assets/adventurer.png" class="fighter-img" id="fighter-img"/>
+            </div>
+        </div>
+        <div class="add-goblin-container">
+            <input id="goblin-input"/>
+            <button id="goblin-button">Challenge Goblin</button>
+        </div>
+        <ul class="goblins" id="goblins">
+            <!-- goblins append here -->
+            <!-- <li class="goblin">
+                <p>Terry</p>
+                <p>😈</p>
+                <p>5</p>
+            </li> -->
+        </ul>
     </main>
-
 </body>
 
 </html>

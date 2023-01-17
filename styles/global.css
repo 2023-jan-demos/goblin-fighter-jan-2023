@@ -7,9 +7,11 @@
 
 body {
     font-family: var(--primary-font);
-    background: var(--background);
+    background: url(../assets/castle.png);
+    background-size: cover;
     display: grid;
     grid-template-rows: auto 1fr;
+
 }
 
 header {
@@ -32,4 +34,49 @@ header .logo {
 
 main {
     padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    background-color: rebeccapurple;
+    color: magenta;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.fighter-container {
+    width: 200px;
+    text-align: center;
+}
+
+.fighter-img {
+    width: 150px;
+}
+
+.goblin {
+    font-size: 1.5rem;
+    background-color: lavender;
+    display: flex;
+    width: 200px;
+    border: solid 1px purple;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.goblin:hover {
+    background-color: blueviolet;
+}
+
+.fighter-img {
+    transition: transform 1s ease-in-out;
+}
+.unconscious {
+    transform: rotate(-90deg);
 }
